@@ -31,11 +31,18 @@ Cd_Downloads
 esac
 Atualizar()
 {
-sudo apt install
+
 }
 Limpa_lixeira()
-
 {
+ echo "Esvaziando a lixeira..."
+  path="${HOME}/.local/share/Trash/files"
+  cd "$path"
+  for file in *
+  do
+  rm -rf "$file"
+  done
+  echo "Done!"
 }
 Cd_Area_De_Trabalho()
 {
