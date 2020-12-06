@@ -10,7 +10,7 @@ echo "1- Atualizar"
 echo "2- Limpa_lixeira"
 echo "3- Cd_Area_De_Trabalho"
 echo "4- Cd_Documentos"
-echo "5- Cd_Documentos"
+echo "5- Cd_Downloads"
 read opcao;
    case $opcao in
 "1")
@@ -26,7 +26,21 @@ Cd_Area_De_Trabalho
 Cd_Documentos
 ;;
 "5")
-Cd_Documentos
+Cd_Downloads
 ;;
 esac
-
+Atualizar()
+{
+}
+Limpa_lixeira()
+{
+}
+Cd_Area_De_Trabalho()
+{
+}
+Cd_Documentos()
+{
+}
+Cd_Downloads()
+{
+}
