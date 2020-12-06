@@ -31,16 +31,23 @@ Cd_Downloads
 esac
 Atualizar()
 {
+sudo apt install
 }
 Limpa_lixeira()
+
 {
 }
 Cd_Area_De_Trabalho()
 {
+
 }
 Cd_Documentos()
 {
+cd Documentos
+clear
 }
 Cd_Downloads()
 {
+cd Downloads
+clear
 }
