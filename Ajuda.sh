@@ -21,5 +21,12 @@ read opcao;
     Arruma_bug_dpkg
      ;;
  esac
+ Atualizar()
+{
+}
+ Limpar_lixeira()
+{
+}
 }
 main
+
