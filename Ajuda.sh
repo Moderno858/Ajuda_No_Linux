@@ -8,7 +8,7 @@ echo "Ah eu uso a versao Linux Mint 19"
 main()
  {
 echo "Escolha uma opçao para você ver sobre o seu pc"
-echo "1- Atualizar"
+echo "1- Atualizar Documentos"
 echo "2- Corrigio erro dpkg: error: parsing file /var/lib/dpkg/updates/0014"
 echo "3- Corrigir /var/lib/dpkg/lock"
 echo "4-  Erro persitente no dpkg que impede qualquer instalação"
@@ -16,6 +16,8 @@ echo "5- Pacotes quebrados AVISO:sistema reiniciar e entrar em modo de recupera�
 echo "6- Pacotes quebrados so use esse caso o de cima nao tenha fucionado Mas antes reinicie o seu Computador para ver se o erro nao arrumou caso nao tenha arrumado pode executar esse comando."
 echo "7- Erros no sudo apt get"
 echo "8-Limpar Lixeira "
+echo "9- Atualiza os softwares disponivel"
+echo "10-cd Area de trabalho"
 read opcao;
    case $opcao in
    "1")
@@ -41,6 +43,12 @@ Erros2
 ;;
 "8")
 Limpar_Lixeira
+;;
+"9")
+Atualizar2
+;;
+"10")
+Area
 ;;
 esac
 }
@@ -141,7 +149,14 @@ Limpar_Lixeira()
 clear
   echo "Pronto."
 }
-
-
+Atualizar2()
+{
+sudo apt gent instal manager
+}
+Area()
+{
+cd Área\ de\ Trabalho/
+echo "Pronto."
+}
 
 main
