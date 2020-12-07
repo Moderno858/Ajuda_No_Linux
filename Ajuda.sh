@@ -92,9 +92,7 @@ clear
 sudo dpkg --configure -a
 clear
 echo "Pronto."
-echo "============================="
-echo "=     Ajuda no Linux        ="
-echo "============================="
+
 }
 DpkgLock()
 {
@@ -107,6 +105,9 @@ clear
 sudo apt-get -f install
 clear
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Erro()
 {
