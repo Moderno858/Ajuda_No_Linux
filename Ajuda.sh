@@ -11,7 +11,7 @@ echo "2- Corrigio erro dpkg: error: parsing file /var/lib/dpkg/updates/0014"
 echo "3- Corrigir /var/lib/dpkg/lock"
 echo "4-  Erro persitente no dpkg que impede qualquer instalação"
 echo "5- Pacotes quebrados AVISO:sistema reiniciar e entrar em modo de recuperação mas ele ira ligar!"
-
+echo "6- Pacotes quebrados so use esse caso o de cima nao tenha fucionado Mas antes reinicie o seu Computador para ver se o erro nao arrumou caso nao tenha arrumado pode executar esse comando."
 read opcao;
    case $opcao in
    "1")
@@ -29,7 +29,9 @@ Erro
 "5")
 Pacotes
 ;;
-
+"6")
+Pacotes2
+;;
 esac
 }
 Atualizar()
@@ -97,6 +99,18 @@ sudo apt-get update
 clear
 echo "Pronto"
 echo "Caso nao tenha fucionando use a tecla 6."
+}
+Pacotes2()
+{
+sudo fuser -cuk /var/lib/dpkg/lock
+clear 
+sudo rm -f /var/lib/dpkg/lock
+clear
+sudo fuser -cuk /var/cache/apt/archives/lock
+clear
+sudo rm -f /var/cache/apt/archives/lock
+clear
+echo "Pronto."
 }
 
 
