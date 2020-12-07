@@ -9,6 +9,7 @@ echo "Escolha uma opçao para você ver sobre o seu pc"
 echo "1- Atualizar"
 echo "2- Corrigio erro dpkg: error: parsing file /var/lib/dpkg/updates/0014"
 echo "3- Corrigir /var/lib/dpkg/lock"
+echo "4-  Erro persitente no dpkg que impede qualquer instalação"
 read opcao;
    case $opcao in
    "1")
@@ -20,6 +21,9 @@ read opcao;
    "3")
     DpkgLock
     ;;
+"4")
+Erro
+;;
 esac
 }
 Atualizar()
@@ -50,6 +54,24 @@ clear
 sudo dpkg --configure -a
 clear
 sudo apt-get -f install
+clear
+echo "Pronto."
+}
+Erro()
+{
+sudo apt-get clean
+clear
+sudo apt-get autoclean
+clear
+sudo apt-get autoremove
+clear
+sudo dpkg --configure -a
+clear
+sudo apt-get install -f
+clear
+sudo apt-get remove -f
+clear
+sudo apt-get update && sudo apt-get upgrade
 clear
 echo "Pronto."
 }
