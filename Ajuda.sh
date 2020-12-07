@@ -125,6 +125,9 @@ clear
 sudo apt-get update && sudo apt-get upgrade
 clear
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Pacotes()
 {
@@ -157,12 +160,18 @@ clear
 sudo rm -f /var/cache/apt/archives/lock
 clear
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Erros2()
 {
 sudo apt install -f
 clear
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Limpar_Lixeira()
 {
@@ -175,31 +184,49 @@ Limpar_Lixeira()
   done
 clear
   echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Atualizar2()
 {
 sudo apt gent instal manager
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Area()
 {
 cd Área\ de\ Trabalho/
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Documentos()
 {
 cd Documentos
 echo "Pronto"
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Downloads()
 {
 cd Downloads
 echo "Pronto"
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Limpar2()
 {
 sudo apt-get autoremove && sudo apt-get clean
 clear
 echo "Pronto"
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Oculto()
 {
@@ -208,5 +235,8 @@ ls -l
 config()
 {
 ifconfig
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 main
