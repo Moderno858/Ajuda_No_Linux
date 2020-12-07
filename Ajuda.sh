@@ -79,9 +79,6 @@ Atualizar()
 sudo apt-get update && sudo apt-get upgrade
 clear
 echo "Pronto."
-echo "============================="
-echo "=     Ajuda no Linux        ="
-echo "============================="
 }
 
 Dpkg104()
@@ -95,6 +92,9 @@ clear
 sudo dpkg --configure -a
 clear
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 DpkgLock()
 {
