@@ -21,6 +21,7 @@ echo "10- Cd Area de trabalho"
 echo "11- Cd Documentos"
 echo "12- Downloads"
 echo "13- Limpar tudo que você nao usou nos utimos 30 dias."
+echo "14- Ver pastas oculta"
 read opcao;
    case $opcao in
    "1")
@@ -61,6 +62,9 @@ Downloads
 ;;
 "13")
 Limpar2
+;;
+"14")
+Oculto
 ;;
 esac
 
@@ -186,5 +190,9 @@ Limpar2()
 sudo apt-get autoremove && sudo apt-get clean
 clear
 echo "Pronto"
+}
+Oculto()
+{
+ls -l
 }
 main
