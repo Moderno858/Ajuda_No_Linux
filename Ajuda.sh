@@ -12,6 +12,7 @@ echo "3- Corrigir /var/lib/dpkg/lock"
 echo "4-  Erro persitente no dpkg que impede qualquer instalação"
 echo "5- Pacotes quebrados AVISO:sistema reiniciar e entrar em modo de recuperação mas ele ira ligar!"
 echo "6- Pacotes quebrados so use esse caso o de cima nao tenha fucionado Mas antes reinicie o seu Computador para ver se o erro nao arrumou caso nao tenha arrumado pode executar esse comando."
+echo "7- Erros no sudo apt get"
 read opcao;
    case $opcao in
    "1")
@@ -34,6 +35,9 @@ Pacotes2
 ;;
 esac
 }
+"7")
+Erros2
+;;
 Atualizar()
 {
 sudo apt-get update && sudo apt-get upgrade
@@ -109,6 +113,12 @@ clear
 sudo fuser -cuk /var/cache/apt/archives/lock
 clear
 sudo rm -f /var/cache/apt/archives/lock
+clear
+echo "Pronto."
+}
+Erros2()
+{
+sudo apt install -f
 clear
 echo "Pronto."
 }
