@@ -20,6 +20,7 @@ echo "9- Atualiza os softwares disponivel"
 echo "10- Cd Area de trabalho"
 echo "11- Cd Documentos"
 echo "12- Downloads"
+echo "13- Limpar tudo que você nao usou nos utimos 30 dias."
 read opcao;
    case $opcao in
    "1")
@@ -57,6 +58,9 @@ Documentos
 ;;
 "12")
 Downloads
+;;
+"13")
+Limpar2
 ;;
 esac
 
@@ -175,6 +179,12 @@ echo "Pronto"
 Downloads()
 {
 cd Downloads
+echo "Pronto"
+}
+Limpar2()
+{
+sudo apt-get autoremove && sudo apt-get clean
+clear
 echo "Pronto"
 }
 main
