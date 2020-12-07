@@ -4,3 +4,4 @@
 =============================
 =     Ajuda no Linux        =
 =============================
+Espero ter ajudado voces!
