@@ -105,9 +105,8 @@ clear
 sudo apt-get -f install
 clear
 echo "Pronto."
-echo "============================="
-echo "=     Ajuda no Linux        ="
-echo "============================="
+
+
 }
 Erro()
 {
@@ -126,6 +125,9 @@ clear
 sudo apt-get update && sudo apt-get upgrade
 clear
 echo "Pronto."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Pacotes()
 {
