@@ -125,9 +125,6 @@ clear
 sudo apt-get update && sudo apt-get upgrade
 clear
 echo "Pronto."
-echo "============================="
-echo "=     Ajuda no Linux        ="
-echo "============================="
 }
 Pacotes()
 {
@@ -145,6 +142,9 @@ sudo apt-get update
 clear
 echo "Pronto"
 echo "Caso nao tenha fucionando use a tecla 6."
+echo "============================="
+echo "=     Ajuda no Linux        ="
+echo "============================="
 }
 Pacotes2()
 {
