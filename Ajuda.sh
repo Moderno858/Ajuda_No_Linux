@@ -17,7 +17,8 @@ echo "6- Pacotes quebrados so use esse caso o de cima nao tenha fucionado Mas an
 echo "7- Erros no sudo apt get"
 echo "8-Limpar Lixeira "
 echo "9- Atualiza os softwares disponivel"
-echo "10-cd Area de trabalho"
+echo "10-Cd Area de trabalho"
+echo "11-Cd Documentos"
 read opcao;
    case $opcao in
    "1")
@@ -49,6 +50,9 @@ Atualizar2
 ;;
 "10")
 Area
+;;
+"11")
+Documentos
 ;;
 esac
 }
@@ -158,5 +162,9 @@ Area()
 cd Área\ de\ Trabalho/
 echo "Pronto."
 }
-
+Documentos()
+{
+cd Documentos
+echo "Pronto"
+}
 main
