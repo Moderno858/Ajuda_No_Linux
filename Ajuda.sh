@@ -22,6 +22,7 @@ echo "11- Cd Documentos"
 echo "12- Downloads"
 echo "13- Limpar tudo que você nao usou nos utimos 30 dias."
 echo "14- Ver pastas oculta"
+echo "15- Ver o seu ip da net e outras coisas sobre o pc"
 read opcao;
    case $opcao in
    "1")
@@ -65,6 +66,9 @@ Limpar2
 ;;
 "14")
 Oculto
+;;
+"15")
+config
 ;;
 esac
 
@@ -194,5 +198,9 @@ echo "Pronto"
 Oculto()
 {
 ls -l
+}
+config()
+{
+ifconfig
 }
 main
